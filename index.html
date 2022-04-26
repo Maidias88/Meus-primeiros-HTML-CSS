@@ -1,50 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>VF advocacia e consultoria juridica
-        </title>
-        <style>
-           footer {
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dev Love</title>
+</head>
+<body>
 
-            background-color: gray;
-            width: 1500px;
-            height: 200px;
-           }
+   <header>
+       <img src="./img/logo robo.jpeg" style="height: 50px; width: 50px;" alt=" logo Dev loves">
+       <h1>Dev Love</h1>
+   </header>  
+   
+   <div id="texto">
+       <p> Dev Love ajuda você a se conectar 
+         com desenvolvedores em busca de um amor.
+       </P>
+        <div class="linguagem">
+           <img class="linguagem" src="./img/C++.png" alt=" linguagem C++"> 
+           <br>
+           <img class="linguagem" src="./img/JAVA.jpeg"alt="linguagem java">
+           <br>
+           <img class="linguagem"src="./img/JS.png"alt="linguagem JS">
+           <br>
+           <img class="linguagem" src="./img/C.png"alt="linguagem C">
+           <br>
+           <img class="linguagem"src="./img/php.png" alt="linguagem php">
+           <br>
+           <img class="linguagem"src="./img/phyton.png" alt="linguagem phyton">
+        </div>
+        <div id="form">
+         <form>
+         <input type="text" placeholder="e-mail">
+         <br><br>
+         <input type="password" placeholder="senha">
+         <br><br>
+         <button>Enviar</button>
+         <br><br>
+         <a href="#">Esqueceu a senha?</a>
+         <br><br>
+         <a href="#"> Criar nova conta</a> 
 
+     </form>
+         
 
-        </style>
+     </div>
+       
+  </div>
+   <div class="devloves-wapper">
+      <img src="./img/LOGO SITE.jpeg" alt="fundo ">
+   </div>
+   <footer>
+      DevLove ©⠀<span id="year"> 2022</span></footer>
+      <script>
+          const year = document.getElementById(year)
+          const actualyear = new Date();
+          year.innerHTML = actualyear.getFullYear;
 
-        
+      </script>
+   
 
-    </head>
-    <body>
-        <h1 style="color: red; font-size: 50px;" >Vinicius Ferreira Advocacia e Consultoria Juridica</h1>
-
-
-            
-        <h2>Somos um escritório de advocacia no qual prezamos pelos direitos dos nossos clientes, 
-            parte que mais sofre com o descaso do comercio</h2>
-        <h3>Analisamos sua documentação com rigor técnico, 
-            para concluir pela viabilidade de ajuizamento ou não da ação judicial em face do convênio, 
-            observados os critérios jurídicos necessários.</h3>
-        <p>
-            Somos um escritório de advocacia localizado em Salvado/Ba e com atuação em todo território brasileiro. 
-            Estamos aptos para atendê-los(as) da mlehor forma possível, utilizando a nossa experiência e tradição a fim de lhe proporcionar
-            a melhor experiência em termo de segurança com relação aos seus direitos.
-            
-        </p>
-        <p1>Estamos localizado no bairro Caminho das Árvores, estamos bem próximos ao Metrô, ao Shopping Salvador e Shopping Sumarê
-            Estamos prontos para atendê-los(as), entre em contato conosco e conte com nosso serviços para solucionar suas demandas juridica.
-        </p1>
-        <ul> 
-            <li>Direito do Consumidor</li>
-            <li>Direito Bancário</li>
-            <li>Direito Civil</li>
-            <li>Dirieto Penal</li>
-        </ul>
-        <img src="data:image/jpeg;base64,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
-        ">
-
-    </body>
-    <footer>Endereço: R. Alceu Amoroso Lima, 668 - Caminho das Árvores, Salvador - BA, 41820-770 - Edf. America Tower</footer>
+</body>
 </html>
